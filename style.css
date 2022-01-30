@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.container{
+    background-color: #2c3e50;
+    padding: 30px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 50px;
+    grid-gap:0 20px;
+    margin: 2% 0;
+    color: #fff;
+}
+.grid-container > div{
+    padding: 3% 0;
+    box-shadow: 1px 1px 10px rgb(238, 236, 236);
+}
+.item1{
+    background-color: #bdc3c7;
+    text-align: center;
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 200px 200px;
+    grid-gap:20px 20px;
+}
+.grid-container2 > div{
+    background-color: #bdc3c7;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgb(238, 236, 236);
+}
+.rasm{
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+.inside-content {
+    padding: 10% 0;
+    font-size: 20px;
+}
+.section-inside p:first-of-type{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.grid-container3{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 1%;
+    margin-top: 2%;
+}
+.grid-container3 > div{
+    background-color: #bdc3c7;
+    text-align: center;
+    padding: 2% 0;
+    box-shadow: 1px 1px 6px rgb(238, 236, 236);
+}
+.fas{
+    font-size: 2rem;
+    margin: 4% 0;
+    color: #fff;
+}
+
+@media only screen and (max-width:576px){
+  .grid-container{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      grid-row-gap:4%;
+      margin-bottom: 10%;
+  }
+  .grid-container2{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap:4%;
+    margin-bottom: 20%;
+  }
+  .content1, .content2{
+      grid-column-start: 1;
+      grid-column-end: 5;
+  }
+  .grid-container3{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap:4%;
+    grid-column-gap: 2%;
+  }
+}
